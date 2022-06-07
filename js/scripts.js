@@ -28,7 +28,7 @@ $(document).ready(function () {
   });
 
   $('#clear').click(function () {
-    $('#output').val('');
+    $('#output').text('');
     $('#sentence').val('');
   });
 });
