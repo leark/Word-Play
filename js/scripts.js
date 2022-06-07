@@ -5,12 +5,6 @@ $(document).ready(function () {
     // grabbing value from inside id sentence
     const sentence = $('#sentence').val();
 
-    // let thereIsAPeriod = false;
-    // if (sentence.charAt(sentence.length - 1) === '.') {
-    //   thereIsAPeriod = true;
-    //   // remove period from the string
-    // }
-
     // split sentence by ' ' and put it in a new array
     const sentenceArray = sentence.split(' ');
 
@@ -30,8 +24,6 @@ $(document).ready(function () {
     // join the elements to make a new string
     let reverseJoined = newArray.join(' ');
 
-    // reverseJoined += '.';
-
     $('#output').text(reverseJoined);
   });
 
@@ -40,3 +32,10 @@ $(document).ready(function () {
     $('#sentence').val('');
   });
 });
+
+// let thereIsAPeriod = false;
+// if (sentence.charAt(sentence.length - 1) === '.') {
+//   thereIsAPeriod = true;
+//   // remove period from the string
+// }
+// reverseJoined += '.';
